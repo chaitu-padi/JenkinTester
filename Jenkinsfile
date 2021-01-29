@@ -9,16 +9,14 @@ pipeline {
                 git 'https://github.com/chaitu-padi/JenkinTester.git'
 		echo "git setup is done------"
             }
-      stages {
+		}	
         stage('Run Code') {
             steps {
                 bat "dir"
                 bat "javac HelloWorld.java"
                 bat "java HelloWorld"
 
-            }       
-
-            
+            }          
         }
     }
 }
